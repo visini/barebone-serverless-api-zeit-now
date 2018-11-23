@@ -1,0 +1,10 @@
+{
+    "version": 2,
+    "name": "barebone-serverless-api-zeit-now",
+    "builds": [
+        { "src": "*.py", "use": "@now/python" , "config": { "maxLambdaSize": "10mb" } }
+    ],
+    "routes": [
+        { "src": "/blog_posts", "dest": "/blog_posts.py" }
+    ]
+}
